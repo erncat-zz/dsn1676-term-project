@@ -16,12 +16,13 @@ html {
     box-sizing: inherit;
 }
 
-body {
+.background {
     background-image: url(../img/background.svg);
     background-repeat: no-repeat;
     position: relative;
     height: 100vh;
     width: 100%;
+    overflow: hidden;
     
 }
 
@@ -33,19 +34,24 @@ body {
 
 .clock {
     position: absolute;
-    top: 50px;
-    left: 500px;
-    transition: all 6s linear;
-    transform-origin: bottom center;
+    top: 20px;
+    left: calc(50% - 65px);
+    
 }
-
 .clock-face {
     height: 120px;
     width: 120px;
     background-image: url(../img/clock-face.svg);
     position: relative;
-    margin-left: auto;
-    margin-right: auto;
+    
+}
+
+.clock:hover .hand-hour {
+    transform: rotate(360deg);
+}
+
+.clock-face:hover .hand-minute {
+    transform: rotate(4320deg);
 }
 
 .hand {
@@ -57,17 +63,31 @@ body {
     transform-origin: bottom center;
 }
 
-.clock-face:target .hand-hour {
-    transform: rotate(360deg);
-}
-
-.clock-face:target .hand-minute {
-    transform: rotate(4320deg);
-}
-
 .center {
     width: 20px;
     position: absolute;
     left: calc(50% - 10px);
     top: calc(50% - 10px);
+}
+
+.cat {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    animation: appear 2s ease-in-out:
+}
+
+@keyframes appear {
+    
+    0% {
+        transform: translateY(0px);
+    }
+    
+    50% {
+        transform: translateY(300px);
+    }
+    
+    100% {
+        transform: translateX(-30px);
+    }
 }
