@@ -16,21 +16,71 @@ html {
     box-sizing: inherit;
 }
 
+body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+
 .background {
     background-image: url(../img/background.svg);
+    background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    height: 100vh;
     width: 100%;
     overflow: hidden;
+    z-index: 1;
+    padding-top: 60%;
+    bottom: 0;
+}
+
+.cat {
+    width: 27.5%;
+    position: absolute;
+    left: 36.5%;
+    bottom: 0;
+    animation: cat-appear 2s linear ;
+}
+
+@keyframes cat-appear {
     
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    
+    100% {
+        transform: translate(80px,-90px) rotate(20deg);
+    }
+ 
+}
+
+.steam {
+    width: 50px;
+    position: relative;
+    bottom: 0;
+    left: 10.5%;
+    animation: steam 2s ease-in-out infinite alternate;
+}
+
+@keyframes steam {
+    
+    0% {
+        transform: translate(0,-270%);
+    }
+    
+    100% {
+        transform: translate(0,-300%);
+    }
+ 
 }
 
 .foreground {
     position: absolute;
     width: 100%;
-    top: 250px;
+    bottom: -40px;
 }
+
 
 .clock {
     position: absolute;
@@ -39,8 +89,8 @@ html {
     
 }
 .clock-face {
-    height: 120px;
-    width: 120px;
+    height: 150px;
+    width: 150px;
     background-image: url(../img/clock-face.svg);
     position: relative;
     
@@ -55,9 +105,9 @@ html {
 }
 
 .hand {
-    width: 14px;
+    width: 18px;
     position: absolute;
-    left: calc(50% - 7px);
+    left: calc(50% - 9px);
     bottom: 50%;
     transition: all 6s linear;
     transform-origin: bottom center;
@@ -68,26 +118,4 @@ html {
     position: absolute;
     left: calc(50% - 10px);
     top: calc(50% - 10px);
-}
-
-.cat {
-    position: absolute;
-    top: 200px;
-    left: 50%;
-    animation: appear 2s ease-in-out:
-}
-
-@keyframes appear {
-    
-    0% {
-        transform: translateY(0px);
-    }
-    
-    50% {
-        transform: translateY(300px);
-    }
-    
-    100% {
-        transform: translateX(-30px);
-    }
 }
