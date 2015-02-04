@@ -40,7 +40,20 @@ body {
     position: absolute;
     left: 36.25%;
     bottom: 0;
+    -webkit-animation: cat-appear 3s ease forwards ;
     animation: cat-appear 3s ease forwards ;
+}
+
+@-webkit-keyframes cat-appear {
+    
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    
+    100% {
+        -webkit-transform: translate(42%,-33%) rotate(20deg);
+    }
+ 
 }
 
 @keyframes cat-appear {
@@ -60,7 +73,19 @@ body {
     position: relative;
     bottom: 0;
     left: 11%;
+    -webkit-animation: steam 2s ease-in-out infinite alternate;
     animation: steam 2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes steam {
+    
+    0% {
+        -webkit-transform: translate(0,-160%);
+    }
+    
+    100% {
+        -webkit-transform: translate(0,-230%);
+    }
 }
 
 @keyframes steam {
@@ -96,10 +121,12 @@ body {
 }
 
 .clock:hover .hand-hour {
+    -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
 }
 
 .clock-face:hover .hand-minute {
+    -webkit-transform: rotate(4320deg);
     transform: rotate(4320deg);
 }
 
@@ -109,6 +136,7 @@ body {
     left: calc(50% - 9px);
     bottom: 50%;
     transition: all 6s linear;
+    -webkit-transform-origin: bottom center;
     transform-origin: bottom center;
 }
 
