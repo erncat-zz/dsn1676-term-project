@@ -36,11 +36,11 @@ body {
 }
 
 .cat {
-    width: 27.5%;
+    width: 28%;
     position: absolute;
-    left: 36.5%;
+    left: 36.25%;
     bottom: 0;
-    animation: cat-appear 2s linear ;
+    animation: cat-appear 3s ease forwards ;
 }
 
 @keyframes cat-appear {
@@ -50,35 +50,34 @@ body {
     }
     
     100% {
-        transform: translate(80px,-90px) rotate(20deg);
+        transform: translate(42%,-33%) rotate(20deg);
     }
  
 }
 
 .steam {
-    width: 50px;
+    width: 4%;
     position: relative;
     bottom: 0;
-    left: 10.5%;
+    left: 11%;
     animation: steam 2s ease-in-out infinite alternate;
 }
 
 @keyframes steam {
     
     0% {
-        transform: translate(0,-270%);
+        transform: translate(0,-160%);
     }
     
     100% {
-        transform: translate(0,-300%);
+        transform: translate(0,-230%);
     }
- 
 }
 
 .foreground {
     position: absolute;
     width: 100%;
-    bottom: -40px;
+    bottom: 0;
 }
 
 
@@ -118,4 +117,10 @@ body {
     position: absolute;
     left: calc(50% - 10px);
     top: calc(50% - 10px);
+}
+
+h1 {
+    color: orange;
+    text-align: center;
+    font-family: sans-serif;
 }
