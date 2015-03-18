@@ -119,13 +119,8 @@ body {
 
 .navigation {
     background-color: white;
-    xwidth: 100vw;
     margin: 0;
-    xpadding-top: 20;
-    xpadding-right: 90%;
     padding: 0;
-    xtop: 0;
-    xz-index: 1000;
     overflow: hidden;
 }
 
