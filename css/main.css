@@ -17,7 +17,7 @@ html {
 }
 
 body {
-    overflow: hidden;
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
 }
@@ -119,12 +119,13 @@ body {
 
 .navigation {
     background-color: white;
-    width: 100vw;
+    xwidth: 100vw;
     margin: 0;
-    padding-top: 20%;
-    padding-right: 90%;
-    top: 0;
-    z-index: 1000;
+    xpadding-top: 20;
+    xpadding-right: 90%;
+    padding: 0;
+    xtop: 0;
+    xz-index: 1000;
     overflow: hidden;
 }
 
@@ -169,6 +170,8 @@ a {
     width: 240px;
     padding-top: 10px;
     padding-left: 50px;
+    position: relative;
+    z-index: 1000;
 }
 
 .toggle {
@@ -188,6 +191,7 @@ a {
     list-style-type: none;
     background-color: white;
     color: orange;
+    margin-top: 80px;
 }
 
 .js-panel-open {
@@ -218,7 +222,7 @@ a {
     margin-right: 50%;
 }
 
-section button:hover {
+button:hover {
     background-color: black;
     border: 2px solid black;
     border-radius: 10px;
@@ -251,4 +255,120 @@ section button:hover {
     100%{
         left: -120px;
     }
-}   
+}
+
+.fish-wrap {
+    overflow: hidden;
+    padding-top: 10px;
+    
+}
+
+.btn-roll {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    background-color: #F79451;
+    border: 2px solid #F79451;
+    border-radius:10px;
+    margin-top: 15px;
+    margin-left: 50%;
+    margin-right: 50%;
+}
+
+.yarn-wrap {
+    overflow: hidden;
+    padding-top: 20px;
+    
+}
+
+.yarn {
+    background-image: url(../img/yarn.svg);
+    background-repeat: no-repeat;
+    background-size: 120px auto;
+    height: 130px;
+    width: 130px;
+}
+
+.yarn-move {
+    position: relative;
+    left: 100%;  
+}
+
+.js-yarn-rotate {
+    animation: yarn-rotate linear 2s infinite; 
+}
+
+.js-yarn-move {
+    animation: yarn-move linear 8s infinite;
+}
+
+@keyframes yarn-rotate {
+    
+    0%{
+        transform: rotate(0deg)
+    }
+    
+    100%{
+        transform: rotate(-360deg)
+    }
+    
+} 
+
+@keyframes yarn-move {
+    
+    0%{
+        left: 100%;
+    }
+    
+    100%{
+        left: -20%;
+    }
+    
+} 
+
+.btn-mouse {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    background-color: #F79451;
+    border: 2px solid #F79451;
+    border-radius:10px;
+    margin-top: 15px;
+    margin-left: 50%;
+    margin-right: 50%;
+}
+
+.mouse-wrap {
+    overflow: hidden;
+    margin-top: 20px;
+    
+}
+
+.mouse {
+    background-image: url(../img/mouse.svg);
+    background-repeat: no-repeat;
+    background-size: 120px auto;
+    height: 80px;
+    width: 100%;
+    position: relative;
+    left: -30%;
+}
+
+.js-mouse-move {
+    animation: mouse-move linear 2s infinite;
+}
+
+@keyframes mouse-move {
+    0%{
+        left: -30%;
+    }
+    100%{
+        left: 120%;
+    }
+}
+
+.mouse-wrap {
+    overflow: hidden;
+    padding-top: 10px;
+    
+}
