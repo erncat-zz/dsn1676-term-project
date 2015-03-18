@@ -245,7 +245,17 @@ button:hover {
 }
 
 .js-fish-move {
+    -webkit-animation: fish-move linear 1s infinite;
     animation: fish-move linear 1s infinite;
+}
+
+@-webkit-keyframes fish-move {
+    0%{
+        left: 0;
+    }
+    100%{
+        left: -120px;
+    }
 }
 
 @keyframes fish-move {
@@ -295,12 +305,26 @@ button:hover {
 }
 
 .js-yarn-rotate {
+    -webkit-animation: yarn-rotate linear 2s infinite;
     animation: yarn-rotate linear 2s infinite; 
 }
 
 .js-yarn-move {
+    -webkit-animation: yarn-move linear 8s infinite;
     animation: yarn-move linear 8s infinite;
 }
+
+@-webkit-keyframes yarn-rotate {
+    
+    0%{
+        transform: rotate(0deg)
+    }
+    
+    100%{
+        transform: rotate(-360deg)
+    }
+    
+} 
 
 @keyframes yarn-rotate {
     
@@ -314,6 +338,17 @@ button:hover {
     
 } 
 
+@-webkit-keyframes yarn-move {
+    
+    0%{
+        left: 100%;
+    }
+    
+    100%{
+        left: -20%;
+    }
+    
+} 
 @keyframes yarn-move {
     
     0%{
@@ -355,7 +390,17 @@ button:hover {
 }
 
 .js-mouse-move {
+    -webkit-animation: mouse-move linear 2s infinite;
     animation: mouse-move linear 2s infinite;
+}
+
+@-webkit-keyframes mouse-move {
+    0%{
+        left: -30%;
+    }
+    100%{
+        left: 120%;
+    }
 }
 
 @keyframes mouse-move {
