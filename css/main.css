@@ -129,14 +129,9 @@ body {
 }
 
 .nav-bars {
-    height: 250px;
+    height: 212px;
 }
 
-.nav li {
-    margin: 0;
-    margin-left: 0;
-    margin-right: 0;
-}
 
 .nav a,
 .nav a:link,
@@ -165,6 +160,10 @@ a {
     font-weight: 100;
 }
 
+.arrow {
+    top: 50%;
+    width: 55px;
+}
 
 .logo {
     width: 240px;
@@ -192,7 +191,7 @@ a {
 }
 
 .js-panel-open {
-    max-height: 10em;
+    max-height: 20%;
 }
     
 
@@ -207,18 +206,49 @@ a {
     overflow: hidden;
 }
 
-
-@media only screen and (min-width: 25em) {
-	
-
-
-@media only screen and (min-width: 38em) {
-     
-
-
-@media only screen and (min-width: 60em) {
-
-
-
-
+.btn-move {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    background-color: #F79451;
+    border: 2px solid #F79451;
+    border-radius:10px;
+    margin-top: 15px;
+    margin-left: 50%;
+    margin-right: 50%;
 }
+
+section button:hover {
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.fish-wrap {
+    overflow: hidden;
+    padding-top: 10px;
+    
+}
+
+.fish {
+    background-image: url(../img/fish.svg);
+    background-repeat: repeat-x;
+    background-size: 120px auto;
+    height: 30px;
+    width: 120%;
+    position: relative;
+    left: 0;
+}
+
+.js-fish-move {
+    animation: fish-move linear 1s infinite;
+}
+
+@keyframes fish-move {
+    0%{
+        left: 0;
+    }
+    100%{
+        left: -120px;
+    }
+}   
