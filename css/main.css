@@ -22,11 +22,11 @@ body {
     padding: 0;
 }
 
-.header {
+.banner {
     background-color: #C7E9F5;
 }
 
-.head-wrap {
+.banner-wrap {
     max-width: 650px;
     margin: 0 auto;
 }
@@ -70,7 +70,7 @@ body {
     }
     
     100% {
-        transform: translate(42%,-33%) rotate(20deg);
+        transform: translate(42%,-21%) rotate(20deg);
     }
  
 }
@@ -114,37 +114,28 @@ body {
 
 .foreground img {
     display: block;
+    position: relative;
 }
 
-h1 {
-    color: orange;
-    text-align: center;
-    font-family: sans-serif;
-}
-
-.logo {
-    width: 240px;
-    padding-top: 10px;
-    padding-left: 50px;
+.navigation {
+    background-color: white;
+    width: 100vw;
+    margin: 0;
+    padding-top: 20%;
+    padding-right: 90%;
+    top: 0;
+    z-index: 1000;
+    overflow: hidden;
 }
 
 .nav-bars {
-    height: 90px;
-}
-
-.nav {
-    list-style: none;
-    margin: 0;
-    float: right;
-    font-weight: 100;
-    text-transform: uppercase;
-    padding-top: 6px;
-    padding-right: 50px;
+    height: 250px;
 }
 
 .nav li {
     margin: 0;
-    display: inline-block;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .nav a,
@@ -164,7 +155,48 @@ h1 {
     color: orange;
 }
 
-.navigation {
+a {
+    text-decoration: none;
+    text-align: right;
+    padding-right: 20%;
+    color: black;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+
+.logo {
+    width: 240px;
+    padding-top: 10px;
+    padding-left: 50px;
+}
+
+.toggle {
+    position: absolute;
+    right: 5%;
+    top: 25px;
+    width: 50px;
+}
+
+.panel {
+    max-height: 0; 
+    overflow: hidden;
+  	transition: all 400ms linear;
+}
+
+.nav {
+    list-style-type: none;
+    background-color: white;
+    color: orange;
+}
+
+.js-panel-open {
+    max-height: 10em;
+}
+    
+
+.header {
     background-color: white;
     width: 100%;
     margin: 0;
@@ -173,4 +205,20 @@ h1 {
     top: 0;
     z-index: 1000;
     overflow: hidden;
+}
+
+
+@media only screen and (min-width: 25em) {
+	
+
+
+@media only screen and (min-width: 38em) {
+     
+
+
+@media only screen and (min-width: 60em) {
+
+
+
+
 }
