@@ -23,6 +23,26 @@ body {
     padding: 0;
 }
 
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    margin: 0 auto;
+    max-width:480px;
+    
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.25em;
+}
+
+li {
+    text-decoration: none;
+}
+
 .banner {
     background-color: #C7E9F5;
 }
@@ -145,6 +165,7 @@ body {
 .nav .nav-current:link,
 .nav .nav-current:visited {
     color: orange;
+    transition: all 250ms linear;
 }
 
 a {
@@ -155,11 +176,6 @@ a {
     font-size: 25px;
     text-transform: uppercase;
     font-weight: 100;
-}
-
-.arrow {
-    top: 50%;
-    width: 55px;
 }
 
 .logo {
@@ -177,10 +193,54 @@ a {
     width: 50px;
 }
 
+.ai-star-toggle {
+    position: absolute;
+    width: 120px;
+
+}
+
+.ae-star-toggle {
+    position: absolute;
+    width: 120px;
+
+}
+
+.id-star-toggle {
+    position: absolute;
+    width: 120px;
+
+}
+
+.ps-star-toggle {
+    position: absolute;
+    width: 120px;
+
+}
+
 .panel {
     max-height: 0; 
     overflow: hidden;
-  	transition: all 400ms linear;
+  	
+}
+
+.ai-star-panel {
+    max-height: 0;
+    overflow: hidden;
+}
+
+.ae-star-panel {
+    max-height: 0;
+    overflow: hidden;
+}
+
+.id-star-panel {
+    max-height: 0;
+    overflow: hidden;
+}
+
+.ps-star-panel {
+    max-height: 0;
+    overflow: hidden;
 }
 
 .nav {
@@ -192,8 +252,33 @@ a {
 
 .js-panel-open {
     max-height: 20%;
+    transition: all 1s linear;
 }
-    
+
+.js-star-panel-open {
+    max-height: 5%;
+    transition: all 1s linear;
+}
+
+.ae-img {
+    background-image: url(../img/ae-stars.svg);
+    background-repeat: no-repeat;
+}
+
+.ai-img {
+    background-image: url(../img/ai-stars.svg);
+    background-repeat: no-repeat;
+}
+
+.ps-img {
+    background-image: url(../img/ps-stars.svg);
+    background-repeat: no-repeat;
+}
+
+.id-img {
+    background-image: url(../img/id-stars.svg);
+    background-repeat: no-repeat;
+}
 
 .header {
     background-color: white;
@@ -206,210 +291,67 @@ a {
     overflow: hidden;
 }
 
-.btn-move {
-    color: white;
-    font-size: 20px;
-    text-align: center;
-    background-color: #F79451;
-    border: 2px solid #F79451;
-    border-radius:10px;
-    margin-top: 15px;
-    margin-left: 50%;
-    margin-right: 50%;
-}
 
 button:hover {
     background-color: black;
-    border: 2px solid black;
-    border-radius: 10px;
+    border: 10px solid black;
+    border-radius: 100px;
+    transition: all 250ms linear;
 }
 
-.fish-wrap {
-    overflow: hidden;
-    padding-top: 10px;
-    
-}
-
-.fish {
-    background-image: url(../img/fish.svg);
-    background-repeat: repeat-x;
-    background-size: 120px auto;
-    height: 30px;
-    width: 120%;
-    position: relative;
-    left: 0;
-}
-
-.js-fish-move {
-    -webkit-animation: fish-move linear 1s infinite;
-    animation: fish-move linear 1s infinite;
-}
-
-@-webkit-keyframes fish-move {
-    0%{
-        left: 0;
-    }
-    100%{
-        left: -120px;
-    }
-}
-
-@keyframes fish-move {
-    0%{
-        left: 0;
-    }
-    100%{
-        left: -120px;
-    }
-}
-
-.fish-wrap {
-    overflow: hidden;
-    padding-top: 10px;
-    
-}
-
-.btn-roll {
-    color: white;
-    font-size: 20px;
-    text-align: center;
+.back-to-top {
     background-color: #F79451;
-    border: 2px solid #F79451;
-    border-radius:10px;
-    margin-top: 15px;
-    margin-left: 50%;
-    margin-right: 50%;
-}
-
-.yarn-wrap {
-    overflow: hidden;
-    padding-top: 20px;
-    
-}
-
-.yarn {
-    background-image: url(../img/yarn.svg);
-    background-repeat: no-repeat;
-    background-size: 120px auto;
-    height: 130px;
-    width: 130px;
-}
-
-.yarn-move {
-    position: relative;
-    left: 100%;  
-}
-
-.js-yarn-rotate {
-    -webkit-animation: yarn-rotate linear 2s infinite;
-    animation: yarn-rotate linear 2s infinite; 
-}
-
-.js-yarn-move {
-    -webkit-animation: yarn-move linear 8s infinite;
-    animation: yarn-move linear 8s infinite;
-}
-
-@-webkit-keyframes yarn-rotate {
-    
-    0%{
-        transform: rotate(0deg)
-    }
-    
-    100%{
-        transform: rotate(-360deg)
-    }
-    
-} 
-
-@keyframes yarn-rotate {
-    
-    0%{
-        transform: rotate(0deg)
-    }
-    
-    100%{
-        transform: rotate(-360deg)
-    }
-    
-} 
-
-@-webkit-keyframes yarn-move {
-    
-    0%{
-        left: 100%;
-    }
-    
-    100%{
-        left: -20%;
-    }
-    
-} 
-@keyframes yarn-move {
-    
-    0%{
-        left: 100%;
-    }
-    
-    100%{
-        left: -20%;
-    }
-    
-} 
-
-.btn-mouse {
     color: white;
-    font-size: 20px;
+    border-radius: 100px;
+    height: 100px;
+    padding: 10px 15px;
     text-align: center;
-    background-color: #F79451;
-    border: 2px solid #F79451;
-    border-radius:10px;
-    margin-top: 15px;
-    margin-left: 50%;
-    margin-right: 50%;
+    width: 200px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all 250ms linear;
+    top: 100%;
 }
 
-.mouse-wrap {
-    overflow: hidden;
-    margin-top: 20px;
-    
+.back-to-top:hover {
+    background-color: black;
+    color: white;
+    border-radius: 100px;
+    height: 100px;
+    padding: 10px 15px;
+    text-align: center;
+    width: 200px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all 250ms linear;
 }
 
-.mouse {
-    background-image: url(../img/mouse.svg);
-    background-repeat: no-repeat;
-    background-size: 120px auto;
-    height: 80px;
-    width: 100%;
-    position: relative;
-    left: -30%;
+.top-scroll{
+    text-align: center;
+    margin: 0 auto;
 }
 
-.js-mouse-move {
-    -webkit-animation: mouse-move linear 2s infinite;
-    animation: mouse-move linear 2s infinite;
+.adobe {
+    margin: 0 auto;
+    top: 120%;
 }
 
-@-webkit-keyframes mouse-move {
-    0%{
-        left: -30%;
-    }
-    100%{
-        left: 120%;
-    }
+.ai-button {
+    max-width: 150px;
+    margin: 1.5em;
 }
 
-@keyframes mouse-move {
-    0%{
-        left: -30%;
-    }
-    100%{
-        left: 120%;
-    }
+.ps-button {
+    max-width: 150px;
+    margin: 1.5em;
 }
 
-.mouse-wrap {
-    overflow: hidden;
-    padding-top: 10px;
-    
+.ae-button {
+    max-width: 150px;
+    margin: 1.5em;
+}
+
+.id-button {
+    max-width: 150px;
+    margin: 1.5em;
 }

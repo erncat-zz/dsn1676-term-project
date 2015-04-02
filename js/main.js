@@ -1,29 +1,40 @@
-var $toggle = $('.toggle');
+ var $toggle = $('.toggle');
 var $panel = $('.panel');
 
-var $btnMove = $('.btn-move');
-var $fish = $('.fish');
+var $aiStarToggle = $('.ai-star-toggle');
+var $aiStarPanel = $('.ai-star-panel');
 
-var $btnRoll = $('.btn-roll');
-var $yarn = $('.yarn');
-var $yarnMove = $('.yarn-move');
+var $aeStarToggle = $('.ae-star-toggle');
+var $aeStarPanel = $('.ae-star-panel');
 
-var $btnMouse = $('.btn-mouse');
-var $mouse = $('.mouse');
+var $idStarToggle = $('.id-star-toggle');
+var $idStarPanel = $('.id-star-panel');
+
+var $psStarToggle = $('.ps-star-toggle');
+var $psStarPanel = $('.ps-star-panel');
+
 
 $toggle.on('click', function () {
 	$panel.toggleClass('js-panel-open');
 });
 
-$btnMove.on('click', function () {
-    $fish.toggleClass('js-fish-move');
+$aiStarToggle.on('click', function () {
+	$aiStarPanel.toggleClass('js-star-panel-open');
 });
 
-$btnRoll.on('click', function () {
-    $yarn.toggleClass('js-yarn-rotate');
-    $yarnMove.toggleClass('js-yarn-move');
+$aeStarToggle.on('click', function () {
+	$aeStarPanel.toggleClass('js-star-panel-open');
 });
 
-$btnMouse.on('click', function () {
-    $mouse.toggleClass('js-mouse-move');
+$idStarToggle.on('click', function () {
+	$idStarPanel.toggleClass('js-star-panel-open');
 });
+
+$psStarToggle.on('click', function () {
+	$psStarPanel.toggleClass('js-star-panel-open');
+});
+
+
+$('.nav').localScroll();
+
+$('.top-scroll').localScroll();
