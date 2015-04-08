@@ -339,6 +339,7 @@ button:hover {
     margin: 4em auto 4em;
     min-height: 14em;
     background-color: #C7E9F5; 
+    text-align: center;
 }
 
 .adobe-buttons {
@@ -387,7 +388,7 @@ footer {
     display: block;
 }
 
-#foreground_cacti {
+.js-active #foreground_cacti {
     -webkit-animation: front-cacti 300ms linear alternate infinite;
     animation: front-cacti 300ms linear alternate infinite;
 }
@@ -421,7 +422,7 @@ footer {
     }
 }
 
-#bckgrnd_cacti {
+.js-active #bckgrnd_cacti {
     -webkit-animation: back-cacti 100ms linear alternate infinite;
     animation: back-cacti 100ms linear alternate infinite;
 }
@@ -463,4 +464,8 @@ footer {
     .bottom-nav {
         text-align: right;
     }
+    
 }
+
+
+

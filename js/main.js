@@ -13,6 +13,7 @@ var $idStarPanel = $('.id-star-panel');
 var $psStarToggle = $('.ps-star-toggle');
 var $psStarPanel = $('.ps-star-panel');
 
+var $cactiSection = $('.cacti-unit');
 
 $toggle.on('click', function () {
 	$panel.toggleClass('js-panel-open');
@@ -39,3 +40,9 @@ $psStarToggle.on('click', function () {
 $('.nav').localScroll();
 
 $('.top-scroll').localScroll();
+
+
+
+$cactiSection.hover( function () {
+    $cactiSection.toggleClass ('js-active');
+});
