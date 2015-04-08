@@ -32,6 +32,7 @@ $idStarToggle.on('click', function () {
 
 $psStarToggle.on('click', function () {
 	$psStarPanel.toggleClass('js-star-panel-open');
+    console.log 
 });
 
 
