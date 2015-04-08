@@ -181,7 +181,7 @@ ul {
     transition: all 250ms linear;
 }
 
-a {
+.nav a {
     text-decoration: none;
     text-align: right;
     padding-right: 20%;
@@ -207,44 +207,28 @@ a {
 }
 
 .ai-star-toggle {
-    position: absolute;
+    xposition: absolute;
     width: 120px;
 }
 
 .ae-star-toggle {
-    position: absolute;
+    xposition: absolute;
     width: 120px;
 }
 
 .id-star-toggle {
-    position: absolute;
+    xposition: absolute;
     width: 120px;
 }
 
 .ps-star-toggle {
-    position: absolute;
+    xposition: absolute;
     width: 120px;
 }
 
 .panel {
     max-height: 0;
     overflow: hidden;
-}
-
-.ai {
-    padding: 2.5em;
-}
-
-.ae {
-    padding: 2.5em;
-}
-
-.ps {
-    padding: 2.5em;
-}
-
-.id {
-    padding: 2.5em;
 }
 
 .ai-star-panel {
@@ -352,8 +336,13 @@ button:hover {
 }
 
 .adobe {
-    margin: 4em auto 10em;
-    height: auto;
+    margin: 4em auto 4em;
+    min-height: 14em;
+    background-color: #C7E9F5; 
+}
+
+.adobe-buttons {
+    background-color: #C7E9F5;   
 }
 
 .ai-button {
@@ -363,41 +352,39 @@ button:hover {
 
 .ps-button {
     max-width: 150px;
-    margin: 1.5em;
+    margin: 1em;
 }
 
 .ae-button {
     max-width: 150px;
-    margin: 1.5em;
+    margin: 1em;
 }
 
 .id-button {
     max-width: 150px;
-    margin: 1.5em;
+    margin: 1em;
 }
 
 footer {
-    background-color: #F79451;
+    background-color: white;
     overflow: hidden;
     height: auto;
 }
 
-bottom-nav {
-    text-align: right;
+.bottom-nav {
+    padding: 0;
+    margin: 0;
+    text-align: center;
 }
 
-nav .bottom-nav {
-    float: right;
-    width: 50%;
-}
-
-nav .bottom-nav li {
+.bottom-nav li {
     display: inline-block;
-    width: 25%;
 }
 
 .cacti {
-    width: 300px;   
+    width: 300px;
+    margin: 0 auto;
+    display: block;
 }
 
 #foreground_cacti {
@@ -465,5 +452,15 @@ nav .bottom-nav li {
     
     100% {
         transform: translateX(0);
+    }
+}
+
+@media only screen and (min-width: 38em) {
+    .cacti {
+        margin: 0;
+    }
+
+    .bottom-nav {
+        text-align: right;
     }
 }
