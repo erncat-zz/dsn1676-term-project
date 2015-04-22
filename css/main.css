@@ -408,6 +408,22 @@ footer {
     text-decoration: none;   
 }
 
+.icons {
+    height: 36px;
+    vertical-align: middle;
+}
+
+.contact {
+    max-width: 350px;
+    margin: 0 auto;
+    padding-bottom: 15px;
+}
+
+.portfolio-items {
+    max-width: 250px;
+    margin: 0 auto;
+}
+
 .bottom-nav a:hover,
 .bottom-nav a:focus,
 .bottom-nav a:active,
@@ -509,6 +525,11 @@ footer {
 
     .bottom-nav {
         text-align: right;
+    }
+    
+    .portfolio-items {
+        max-width: 1000px;
+        margin: 0 auto;
     }
     
 }
