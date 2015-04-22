@@ -10,6 +10,7 @@
 	.st4{letter-spacing:72;}
 	.st5{font-size:139.8654;}
 	.st6{letter-spacing:35;}
+	.st7{fill:#C7E9F5;}
 </style>
 <font horiz-adv-x="1000">
 <!-- Copyright 1993, 1994, 2001, 2002 Adobe Systems Incorporated. All rights reserved. ITC and Avant Garde are trademarks of International Typeface Corporation registered in the U.S. Patent and Trademark Office and may be registered in certain other jurisdictions. -->
@@ -75,6 +76,6 @@
 	<text transform="matrix(1 0 0 1 1095.3729 2523.7017)" class="st1 st2 st5 st6">KENNELS</text>
 </g>
 <g>
-	<path d="M2895.2,13.6v2881.6H13.6V13.6H2895.2 M2908.8,0H0v2908.8h2908.8V0L2908.8,0z"/>
+	<path class="st7" d="M2895.2,13.6v2881.6H13.6V13.6H2895.2 M2908.8,0H0v2908.8h2908.8V0L2908.8,0z"/>
 </g>
 </svg>

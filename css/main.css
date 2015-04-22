@@ -361,6 +361,10 @@ button:hover {
     text-align: center;
 }
 
+.skill-pad {
+    padding-top: 80px;
+}
+
 .adobe-buttons {
     background-color: #C7E9F5;   
 }

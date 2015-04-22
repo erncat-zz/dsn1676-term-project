@@ -17,6 +17,7 @@
 	.st11{fill:#FFEDD6;}
 	.st12{fill:#BBBDBF;}
 	.st13{fill:none;stroke:#000000;stroke-width:7.1709;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st14{fill:#C7E9F5;}
 </style>
 <g>
 	<g id="XMLID_24_">
@@ -4202,6 +4203,6 @@
 	</g>
 </g>
 <g>
-	<path d="M2892.5,13.6v2881.6H10.9V13.6H2892.5 M2906.1,0H-2.7v2908.8h2908.8V0L2906.1,0z"/>
+	<path class="st14" d="M2892.5,13.6v2881.6H10.9V13.6H2892.5 M2906.1,0H-2.7v2908.8h2908.8V0L2906.1,0z"/>
 </g>
 </svg>
